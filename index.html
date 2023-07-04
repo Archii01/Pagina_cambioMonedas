@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="ExchangeCalculator.js"></script>
+
+    <title> Exchange Calculator </title>
+</head>
+
+<header>
+    <h1> Calcultator : </h1>
+    <h2> Elija el monto y el valor de cambio para continuar : </h2>
+</header>
+
+
+
+<body>
+  <div class="container">
+    <form>
+      <div class="listas">
+        <div class="select1">
+          <select name="select" required>
+            <option value="inicio" selected> Moneda Inicial</option>
+            <option value="value1">USD</option>
+            <option value="value2">EURO</option>
+            <option value="value3">PESO</option>
+          </select>
+        </div>
+    
+        <div class="select2">
+          <select name="select" required>
+            <option value="inicio" selected> Moneda Cambio</option>
+            <option value="value1">USD</option>
+            <option value="value2">EURO</option>
+            <option value="value3">PESO</option>
+          </select>
+        </div>
+     
+      </div>
+
+    </form>
+
+
+    <input placeholder="Escribe aqui">
+    <button> Convertir</button>
+    <textarea readonly="readonly" placeholder="Aca aparecera el resultado."></textarea>
+
+  </div>
+</body>
+
+<footer>
+    <p>Gracias por usar los servicios de nuestro banco.</p>
+</footer>
+
+<script>
+  var boton = document.querySelector("#botonEncriptado");
+  boton.onclick = encripta;
+</script>
+
+
+</html>

@@ -1,0 +1,183 @@
+
+ /* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del header */
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(211, 236, 208);
+  padding: 2px 2px 60px;
+  border-radius: 20px;
+}
+
+/* Estilos del body */
+body {
+  background-color: #f1f1f1;
+  background: url(/diseno-fondo-dinero_1212-560.jpg);
+}
+
+/* Estilos de los encabezados */
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #333;
+  font-size: 2rem;
+  padding: 2%;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  padding: 2%;
+  font-weight: bold;
+}
+
+/* Estilos del contenedor principal */
+.container {
+  min-height: calc(100vh - 100px - 100px);
+}
+
+/* Estilos de la lista */
+.listas {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 10%;
+  padding: 10px;
+}
+
+/* Estilos del footer */
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(66, 70, 65);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Estilos del párrafo en el footer */
+p {
+  text-align: center;
+  padding-top: 45px;
+}
+
+/* Estilos del formulario */
+form {
+  margin: 2%;
+  padding: 2%;
+}
+
+/* Estilos de los selectores */
+.select1 {
+  display: inline-block;
+  margin: 1%;
+  position: relative;
+  margin-right: 15%;
+}
+
+.select2 {
+  display: inline-block;
+  margin: 1%;
+  position: relative;
+  margin-left: 15%;
+}
+
+/* Estilos de las opciones del selector */
+option {
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Estilos del selector */
+select {
+  font-size: 18px;
+  font-family: monospace;
+  font-weight: 200;
+  padding: 5%;
+  border-radius: 18px;
+  box-shadow: 0px 0px 8px rgb(175, 172, 172);
+  text-align: center;
+}
+
+select:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+/* Estilos del campo de entrada */
+input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 20px;
+  font-family: monospace;
+  border-radius: 10px;
+  border-width: 0.5px;
+  box-shadow: 0px 0px 8px rgb(133, 129, 129);
+}
+
+/* Estilos del botón */
+button {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2vh;
+  padding: 10px 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 8px rgba(253, 253, 253, 0.8);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 12px rgba(253, 253, 253, 0.9);
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: skewY(-15deg);
+  transition: all 0.3s ease;
+}
+
+button:hover:before {
+  transform: translateX(-150%) skewY(-15deg);
+}
+
+button span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Estilos del textarea */
+textarea {
+  display: block;
+  resize: none;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Arial";
+}
+
