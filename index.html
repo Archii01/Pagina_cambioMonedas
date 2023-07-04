@@ -20,10 +20,10 @@
 
 <body>
   <div class="container">
-    <form>
+    <form name="formul">
       <div class="listas">
         <div class="select1">
-          <select name="select" required>
+          <select name="selectPri" required>
             <option value="inicio" selected> Moneda Inicial</option>
             <option value="value1">USD</option>
             <option value="value2">EURO</option>
@@ -32,7 +32,7 @@
         </div>
     
         <div class="select2">
-          <select name="select" required>
+          <select name="selectLast" required>
             <option value="inicio" selected> Moneda Cambio</option>
             <option value="value1">USD</option>
             <option value="value2">EURO</option>
@@ -44,10 +44,9 @@
 
     </form>
 
-
-    <input placeholder="Escribe aqui">
-    <button> Convertir</button>
-    <textarea readonly="readonly" placeholder="Aca aparecera el resultado."></textarea>
+    <input id="entrada" placeholder="Escribe aqui">
+    <button id="botonConvertir"> Convertir</button>
+    <textarea id="salida" readonly="readonly" placeholder="Aca aparecera el resultado." cols="40" rows="10"></textarea>
 
   </div>
 </body>
@@ -57,9 +56,12 @@
 </footer>
 
 <script>
-  var boton = document.querySelector("#botonEncriptado");
-  boton.onclick = encripta;
+  let boton = document.querySelector("#botonConvertir");
+  boton.onclick = function() {
+    convertir();
+  };
 </script>
+
 
 
 </html>
